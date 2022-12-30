@@ -4,7 +4,25 @@
   box-sizing: border-box;
 }
 
-img {
+.bg {
+  display: block;
   width: 100%;
   height: auto;
+}
+
+video {
+  display: block;
+  width: 100%;
+  height: auto;
+  filter: brightness(0.3) grayscale(100%);
+}
+
+.text {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  z-index: 10;
+  top: 15vw;
+  width: 30%;
 }
