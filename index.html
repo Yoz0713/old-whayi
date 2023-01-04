@@ -16,5 +16,20 @@
     <img src="./電腦版.webp" class="bg">
     <img src="./txt.svg" class="text">
 </body>
+<script>
+
+    const API_KEY = 'AIzaSyDWOCofRgxGRGKYRUQWydy-U_xxslLIWxM';
+
+    // Replace YOUR_VIDEO_ID with the ID of the video you want to retrieve
+    const VIDEO_ID = 'DJklOyeHvFU';
+
+    // Make an HTTP GET request to the YouTube Data API
+    fetch(`https://www.googleapis.com/youtube/v3/videos?part=snippet&id=${VIDEO_ID}&key=${API_KEY}`).then((response => {
+        return response.json()
+    })).then((data) => {
+        console.log(data)
+    })
+
+</script>
 
 </html>
